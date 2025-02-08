@@ -70,3 +70,5 @@ for i in range(len(prices)):
     print(p,v)
     t=p*v
     print(t)
+
+
