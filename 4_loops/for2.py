@@ -9,9 +9,9 @@ list1=[1,2,3,4,5,6]
 #     print(t)
 
 #type 2
-# for i in range(100):
-#     if i%2==0:
-#         print(i)
+for i in range(100):
+    if i%2==0:
+        print(i)
 
 #range function
 # l=range(7,16,2)
