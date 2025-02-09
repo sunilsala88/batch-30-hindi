@@ -61,3 +61,35 @@ print(rev_list)
 for i in rev_list:
     ans=ans+word1[i]
 print(ans)
+
+
+word1='fessorpro'
+i=-1
+ans=""
+while True:
+    if i==-len(word1)-1:
+        break
+    ans=ans+word1[i]
+    i=i-1
+print(ans)
+
+
+
+numbers=[3, 1000, 45, 44, 1, 5, 9]
+numbers.sort()
+print(numbers)
+largest=numbers[0]
+largest2=numbers[0]
+i=0
+while True:
+    if i==len(numbers):
+        break
+    current_num=numbers[i]
+
+    if largest<current_num:
+        largest2=largest
+        largest=current_num
+    i=i+1
+
+print(largest)
+print(largest2)
