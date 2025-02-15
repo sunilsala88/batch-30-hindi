@@ -63,3 +63,59 @@ def do_somethig():
     pass
 
 do_somethig()
+
+
+# Python program to
+# demonstrate accessing of
+# variables of nested functions
+
+def f1():
+    s = 'I love GeeksforGeeks'
+    
+    def f2():
+        print(s)
+        
+    f2()
+
+# Driver's code
+f1()
+
+
+
+def factorial(n):
+    if n == 0:  
+        return 1
+    else:
+        return n * factorial(n - 1) 
+      
+print(factorial(4))
+
+
+def myFun(x):
+
+    # After below line link of x with previous
+    # object gets broken. A new object is assigned
+    # to x.
+    x = [20, 30, 40]
+
+
+# Driver Code (Note that lst is not modified
+# after function call.
+lst = [10, 11, 12, 13, 14, 15]
+myFun(lst)
+print(lst)
+
+x = 10
+def myFun():
+    global x
+    # After below line link of x with previous
+    # object gets broken. A new object is assigned
+    # to x.
+    x = 20
+
+
+# Driver Code (Note that x is not modified
+# after function call.
+print(x)
+myFun()
+print(x)
