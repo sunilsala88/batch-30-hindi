@@ -15,3 +15,5 @@ class Circle:
 
     def circumfrence(self):
         return 2*self.pi*self.radius
+if __name__=='__main__': 
+    print('this is inside demo1')
