@@ -31,3 +31,24 @@ ans=dt.datetime.strftime(n1,f)
 print(ans)
 print(type(n1))
 print(type(ans))
+
+#problem to run a function every 1 min
+
+def main_strategy():
+    print('starting strategy')
+
+def every_5sec():
+    print('fetch order')
+
+import time
+while True:
+    ct=dt.datetime.now()
+    print(ct)
+    if ct.second==1:
+        main_strategy()
+
+    if ct.second in range(0,60,5):
+        every_5sec()
+    
+    time.sleep(1)
+
